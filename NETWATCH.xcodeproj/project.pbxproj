@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B001 /* NETWATCHApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001 /* NETWATCHApp.swift */; };
+		B002 /* NWTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A002 /* NWTheme.swift */; };
+		B003 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A003 /* Models.swift */; };
+		B004 /* NWScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004 /* NWScanner.swift */; };
+		B005 /* NWServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A005 /* NWServices.swift */; };
+		B006 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A006 /* RootView.swift */; };
+		B007 /* ConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A007 /* ConsoleView.swift */; };
+		B008 /* RadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A008 /* RadarView.swift */; };
+		B009 /* DeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009 /* DeviceListView.swift */; };
+		B010 /* HeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A010 /* HeatmapView.swift */; };
+		B011 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A011 /* HistoryView.swift */; };
+		B012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A012 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A001 /* NETWATCHApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NETWATCHApp.swift; sourceTree = "<group>"; };
+		A002 /* NWTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWTheme.swift; sourceTree = "<group>"; };
+		A003 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A004 /* NWScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWScanner.swift; sourceTree = "<group>"; };
+		A005 /* NWServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWServices.swift; sourceTree = "<group>"; };
+		A006 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A007 /* ConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleView.swift; sourceTree = "<group>"; };
+		A008 /* RadarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarView.swift; sourceTree = "<group>"; };
+		A009 /* DeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListView.swift; sourceTree = "<group>"; };
+		A010 /* HeatmapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapView.swift; sourceTree = "<group>"; };
+		A011 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		A012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A014 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		PROD /* NETWATCH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NETWATCH.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		MAINGRP /* NETWATCH */ = {
+			isa = PBXGroup;
+			children = (
+				A001 /* NETWATCHApp.swift */,
+				A013 /* Info.plist */,
+				A014 /* PrivacyInfo.xcprivacy */,
+				A012 /* Assets.xcassets */,
+				VIEWSGRP /* Views */,
+				MODELSGRP /* Models */,
+				SERVICESGRP /* Services */,
+				UTILSGRP /* Utils */,
+			);
+			path = NETWATCH;
+			sourceTree = "<group>";
+		};
+		MODELSGRP /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A003 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		PRODGRP /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				PROD /* NETWATCH.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ROOT = {
+			isa = PBXGroup;
+			children = (
+				MAINGRP /* NETWATCH */,
+				PRODGRP /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		SERVICESGRP /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A004 /* NWScanner.swift */,
+				A005 /* NWServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		UTILSGRP /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A002 /* NWTheme.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		VIEWSGRP /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A006 /* RootView.swift */,
+				A007 /* ConsoleView.swift */,
+				A008 /* RadarView.swift */,
+				A009 /* DeviceListView.swift */,
+				A010 /* HeatmapView.swift */,
+				A011 /* HistoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		TARGET /* NETWATCH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFGLIST /* Build configuration list for PBXNativeTarget "NETWATCH" */;
+			buildPhases = (
+				SRCPHASE /* Sources */,
+				RESPHASE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NETWATCH;
+			productName = NETWATCH;
+			productReference = PROD /* NETWATCH.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PROJECT /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					TARGET = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = PROJCFGLIST /* Build configuration list for PBXProject "NETWATCH" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ROOT;
+			productRefGroup = PRODGRP /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				TARGET /* NETWATCH */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		RESPHASE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B012 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SRCPHASE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B001 /* NETWATCHApp.swift in Sources */,
+				B002 /* NWTheme.swift in Sources */,
+				B003 /* Models.swift in Sources */,
+				B004 /* NWScanner.swift in Sources */,
+				B005 /* NWServices.swift in Sources */,
+				B006 /* RootView.swift in Sources */,
+				B007 /* ConsoleView.swift in Sources */,
+				B008 /* RadarView.swift in Sources */,
+				B009 /* DeviceListView.swift in Sources */,
+				B010 /* HeatmapView.swift in Sources */,
+				B011 /* HistoryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DBGCFG /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = XR2UX53T9Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NETWATCH/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netwatch.netwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		PROJDBG /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		PROJREL /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		RELCFG /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XR2UX53T9Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NETWATCH/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netwatch.netwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFGLIST /* Build configuration list for PBXNativeTarget "NETWATCH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBGCFG /* Debug */,
+				RELCFG /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		PROJCFGLIST /* Build configuration list for PBXProject "NETWATCH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				PROJDBG /* Debug */,
+				PROJREL /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = PROJECT /* Project object */;
+}
