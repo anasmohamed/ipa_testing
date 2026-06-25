@@ -1,0 +1,48 @@
+name: iOS-ipa-build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-ios:
+    name: 🎉 iOS Build
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Select Xcode version
+        run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
+      - name: Build iOS app (no code sign)
+        run: |
+          xcodebuild \
+            -project NETWATCH.xcodeproj \
+            -scheme NETWATCH \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Create Payload folder
+        run: mkdir Payload
+        working-directory: build/Build/Products/Release-iphoneos
+
+      - name: Move .app into Payload
+        run: mv NETWATCH.app Payload/
+        working-directory: build/Build/Products/Release-iphoneos
+
+      - name: Zip into .ipa
+        run: zip -qq -r -9 NETWATCH.ipa Payload
+        working-directory: build/Build/Products/Release-iphoneos
+
+      - name: Upload to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: build/Build/Products/Release-iphoneos/NETWATCH.ipa
+          tag: v1.0
+          overwrite: true
+          body: "NETWATCH iOS — unsigned build"
